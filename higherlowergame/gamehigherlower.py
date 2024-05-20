@@ -2,7 +2,8 @@ from image import logo ,vs
 print(logo)
 from game_data import data
 import random
-
+import os
+clear = lambda: os.system('cls')
 
 def format_data(account):
     account_name=account["name"]
@@ -43,6 +44,8 @@ while continue_game:
 
     is_correct=check_answer(guess,a_follower_account,b_follower_account)
 
+    clear()
+    print(logo)
 
     if is_correct:
         score += 1
@@ -50,6 +53,7 @@ while continue_game:
     else:
         continue_game=False
         print(f"you are wrong  ! sorry your score is {score}")
+        
 
 
 
