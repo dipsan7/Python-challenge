@@ -19,6 +19,7 @@ def check_answer(guess,a_followers,b_followers):
     
 score=0
 account_b=random.choice(data)
+
 #  for continue game 
 continue_game=True
 while continue_game:
@@ -38,7 +39,7 @@ while continue_game:
 
 
 
-    # get the follower count of each acc
+   
     a_follower_account=account_a["follower_count"]
     b_follower_account=account_b["follower_count"]
 
@@ -55,6 +56,3 @@ while continue_game:
         print(f"you are wrong  ! sorry your score is {score}")
         
 
-
-
-# clear the screen
